@@ -126,13 +126,12 @@
 
       <ul class="nav-menu" id="navMenu">
         <li><a href="#news"       onclick="closeMenu()">最新情報</a></li>
-        <li><a href="#profile"    onclick="closeMenu()">プロフィール</a></li>
+        <li><a href="#activity"   onclick="closeMenu()">活動報告</a></li>
         <li><a href="#policy"     onclick="closeMenu()">ポリシー</a></li>
         <li><a href="#gallery"    onclick="closeMenu()">活動写真</a></li>
         <li><a href="#issues"     onclick="closeMenu()">社会問題</a></li>
         <li><a href="#contact"    onclick="closeMenu()">ご意見</a></li>
-        <li><a href="#members"    onclick="closeMenu()">Members</a></li>
-        <li><a href="#experience" onclick="closeMenu()">経験</a></li>
+        <li><a href="#members"    onclick="closeMenu()">募集</a></li>
         <li><a href="#motivation" onclick="closeMenu()">きっかけ</a></li>
       </ul>
     </nav>
@@ -148,30 +147,119 @@
        ======================================== -->
   <section class="hero" id="top">
     <div class="hero-overlay"></div>
-<div class="hero-content">
+    <div class="hero-content hero-split">
 
-      <!-- プロフィール写真（images/profile.jpg） -->
-      <img src="images/profile.jpg" alt="永塚英恵" class="hero-avatar" width="150" height="150">
-
-      <p class="hero-yomi">ながつか はなえ</p>
-      <h1 class="hero-name">永塚 英恵</h1>
-      <p class="hero-title">結城市市議会議員</p>
-
-      <!-- キャッチコピー（自由に変更してください） -->
-      <p class="hero-catch">地域から日本を変える。はなちゃん、全力前進！</p>
-
-      <!-- SNSリンク（hrefのURLをご自身のものに変えてください） -->
-      <div class="hero-sns">
-        <a href="https://www.youtube.com/@hakkynachannel2894" target="_blank" rel="noopener" class="sns-pill">&#x25B6; YouTube</a>
-        <a href="https://x.com/hanafxr" target="_blank" rel="noopener" class="sns-pill">&#x2715; X</a>
-        <a href="https://www.instagram.com/hakkyna/" target="_blank" rel="noopener" class="sns-pill">&#x1F4F7; Instagram</a>
-        <a href="https://www.tiktok.com/@hakkyna" target="_blank" rel="noopener" class="sns-pill">&#x266A; TikTok</a>
-        <a href="https://www.facebook.com/hanafxr/" target="_blank" rel="noopener" class="sns-pill">f Facebook</a>
+      <!-- 左：写真・名前・SNSボタン -->
+      <div class="hero-left">
+        <img src="images/profile.jpg" alt="永塚英恵" class="hero-avatar" width="90" height="90">
+        <p class="hero-yomi">ながつか はなえ</p>
+        <h1 class="hero-name">永塚 英恵<span class="hero-name-role">結城市市議会議員</span></h1>
+        <p class="hero-catch">地域から日本を変える。<br>はなちゃん、全力前進！</p>
+        <div class="hero-sns">
+          <a href="https://www.youtube.com/@hakkynachannel2894" target="_blank" rel="noopener" class="sns-pill">&#x25B6; YouTube</a>
+          <a href="https://x.com/hanafxr" target="_blank" rel="noopener" class="sns-pill">&#x2715; X</a>
+          <a href="https://www.instagram.com/hakkyna/" target="_blank" rel="noopener" class="sns-pill">&#x1F4F7; Instagram</a>
+          <a href="https://www.tiktok.com/@hakkyna" target="_blank" rel="noopener" class="sns-pill">&#x266A; TikTok</a>
+          <a href="https://www.facebook.com/hanafxr/" target="_blank" rel="noopener" class="sns-pill">f Facebook</a>
+        </div>
       </div>
+
+      <!-- 右：プロフィール表 -->
+      <div class="hero-right">
+        <table class="hero-prof-table">
+          <tr>
+            <th>生年月日</th>
+            <td>1966年5月16日（おうし座）</td>
+          </tr>
+          <tr>
+            <th>資格</th>
+            <td>ハラスメントカウンセラー＆アドバイザー<br>英会話塾 English Rainbow 経営</td>
+          </tr>
+          <tr>
+            <th>趣味</th>
+            <td>英会話・三味線・モトクロス・バイクツーリング・DIY・動物飼育</td>
+          </tr>
+          <tr>
+            <th>連絡先</th>
+            <td><a href="mailto:hakkuna@mineo.jp" style="color:rgba(255,255,255,.9)">hakkuna@mineo.jp</a></td>
+          </tr>
+        </table>
+      </div>
+
     </div>
 
-    <!-- 下へスクロールの矢印 -->
     <a href="#news" class="hero-scroll-arrow" aria-label="下へスクロール">&#x2193;</a>
+  </section>
+
+
+
+
+  <!-- ========================================
+       実績・成果セクション
+       ======================================== -->
+  <section id="results" class="section results-section">
+    <div class="container">
+      <h2 class="section-title fade-up">&#x1F4AC; 議会で取り上げ、サポートした取り組み</h2>
+      <p class="section-lead fade-up">行政が進める施策を議会での質問・提言を通じてサポートし、実現に向けて後押ししてきた取り組みです。</p>
+
+      <div class="results-grid">
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F37D;</div>
+          <h3>小中学校<br>給食無償化</h3>
+          <p>子育て世帯の負担軽減を議会で継続的に取り上げ、行政の取り組みをサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x2744;</div>
+          <h3>中学校体育館<br>エアコン設置</h3>
+          <p>猛暑の中での安全な学習環境づくりを議会で質問し、整備の実現を後押ししました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F4DD;</div>
+          <h3>書かない窓口<br>システム導入</h3>
+          <p>市民が手続きしやすい市役所をめざして提言。行政のDX推進をサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F691;</div>
+          <h3>消防署新設の<br>合意形成</h3>
+          <p>住民との丁寧な対話による合意形成を議会で求め、地域の安全強化をサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F33F;</div>
+          <h3>環境共生型農業<br>推進事業開始</h3>
+          <p>有機農業の推進を議会で繰り返し取り上げ、市の公式事業としての立ち上げをサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F6E1;</div>
+          <h3>地域防災組織<br>結成</h3>
+          <p>自主防災組織の重要性を議会で訴え、地域ぐるみの防災体制づくりをサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F4BB;</div>
+          <h3>テキスト型<br>プログラミング教育</h3>
+          <p>子供たちの未来を見据えた教育の充実を提言し、本格的なプログラミング教育の導入をサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F1EC;&#x1F1E7;</div>
+          <h3>英語教員増員・<br>体験型英語学習</h3>
+          <p>グローバル人材育成に向けた英語教育の強化を訴え、教員増員と体験型学習の導入をサポートしました。</p>
+        </div>
+
+        <div class="result-card fade-up">
+          <div class="result-icon">&#x1F3EB;</div>
+          <h3>教育支援センター<br>南分室設置</h3>
+          <p>不登校の子供たちが通いやすい環境づくりを議会で求め、南部地域への分室設置をサポートしました。</p>
+        </div>
+
+      </div>
+    </div>
   </section>
 
 
@@ -209,6 +297,171 @@
         </article>
 
       </div>
+    </div>
+  </section>
+
+
+  <!-- ========================================
+       議会活動報告セクション
+       ======================================== -->
+  <section id="activity" class="section">
+    <div class="container">
+      <h2 class="section-title fade-up">&#x1F4CB; 議会活動報告</h2>
+      <p class="section-lead fade-up">結城市議会での一般質問の記録です。2023年6月より毎回質問しています。</p>
+
+      <!-- 注目の質問（最近3件） -->
+      <div class="activity-grid">
+
+        <article class="activity-card fade-up">
+          <div class="activity-header">
+            <time class="activity-date">2026年3月</time>
+            <span class="activity-tag">一般質問</span>
+          </div>
+          <h3 class="activity-title">アクロス天井改修工事の進捗とアスベスト対応</h3>
+          <p class="activity-body">市民が利用するアクロスの天井改修工事について、工事の進捗状況・アスベスト対応・今後の取り組みを質問。市民の安全を最優先に進めるよう訴えました。</p>
+        </article>
+
+        <article class="activity-card fade-up">
+          <div class="activity-header">
+            <time class="activity-date">2025年12月</time>
+            <span class="activity-tag">一般質問</span>
+          </div>
+          <h3 class="activity-title">新設消防署の場所と住民との合意形成</h3>
+          <p class="activity-body">新設が計画されている消防署について、設置場所の選定理由と地域住民との合意形成プロセスを質問。市民の声が反映された安全なまちづくりを求めました。</p>
+        </article>
+
+        <article class="activity-card fade-up">
+          <div class="activity-header">
+            <time class="activity-date">2025年6月</time>
+            <span class="activity-tag">一般質問</span>
+          </div>
+          <h3 class="activity-title">環境共生型農業推進事業・有機農業の今後のビジョン</h3>
+          <p class="activity-body">結城市の有機農業の取り組み状況と今後のビジョンを質問。地域の農産物を活かした地産地消・学校給食への導入など、結城市ならではの農業政策の推進を訴えました。</p>
+        </article>
+
+      </div>
+
+      <!-- 全質問一覧 -->
+      <details class="activity-all fade-up">
+        <summary class="activity-all-title">&#x1F4C5; 過去の全質問一覧を見る（2023年6月〜）</summary>
+        <div class="activity-list">
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2026年3月</div>
+            <ul class="activity-list-items">
+              <li>アクロス天井改修工事の進捗状況とアスベスト対応、今後の取り組み</li>
+              <li>公立コミュニティーセンターの施設更新計画と維持管理計画</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2025年12月</div>
+            <ul class="activity-list-items">
+              <li>新設消防署の場所と住民との合意形成</li>
+              <li>自治体DXの進捗状況とセキュリティー対策</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2025年9月</div>
+            <ul class="activity-list-items">
+              <li>筑西広域組合基金の現在と今後の運営状況・分担金基金の設立</li>
+              <li>成年後見人制度の推進委員会活動と外部委託の検討</li>
+              <li>南中学校区新設校体育館削除に関する補助金問題</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2025年6月</div>
+            <ul class="activity-list-items">
+              <li>地域防災連携・自主防災組織と防災訓練の在り方</li>
+              <li>公立保育所の現状と施設統廃合</li>
+              <li>環境共生型農業推進事業・有機農業の取り組みと今後のビジョン</li>
+              <li>非認知能力の現状と市内小中学校の取り組みと今後</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2025年3月</div>
+            <ul class="activity-list-items">
+              <li>未利用地・遊休地の利用状況と今後の予定</li>
+              <li>市財政の現状と経費削減・予算不足対策</li>
+              <li>国民健康保険の保険税率引き上げとサービスの充実</li>
+              <li>市立保育所の現状と今後の予定</li>
+              <li>地域包括支援システムの現状と多方面での連携</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2024年12月</div>
+            <ul class="activity-list-items">
+              <li>ハラスメント相談状況と外部相談窓口設置</li>
+              <li>ネット詐欺対策と犯罪防止の環境整備</li>
+              <li>防災訓練の参加者確保と魅力ある訓練にする取り組み</li>
+              <li>市のPR・デジタル広報とインバウンド推進</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2024年9月</div>
+            <ul class="activity-list-items">
+              <li>中学校部活地域移行の進捗・指導者確保・財源確保</li>
+              <li>学校施設個別施設計画の取り組み状況と今後の予定</li>
+              <li>校内フリースクール（SSR設置）・SSW確保・将来の展望</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2024年6月</div>
+            <ul class="activity-list-items">
+              <li>ハラスメント防止条例の防止対策委員会・相談窓口・周知啓発体制</li>
+              <li>北部市街地活性化のイベント成果と今後の計画</li>
+              <li>自治会加入率向上・加入率低下防止対策・自治会向けアプリの導入</li>
+              <li>学校統廃合の請負業者と経緯・実質公債費率と先進事例</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2024年3月</div>
+            <ul class="activity-list-items">
+              <li>AEDの屋外設置状況と普及啓発</li>
+              <li>ゴミのポイ捨て防止・マナーアップ・条例・広報活動</li>
+              <li>体育館のエアコン設置・整備方針と熱中症予防</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2023年12月</div>
+            <ul class="activity-list-items">
+              <li>子育て時短就業の就業実態・企業への周知・今後の取り組み</li>
+              <li>放課後児童クラブの民営・市営のメリットデメリットと待機児童対策</li>
+              <li>児童英語教育（保幼小）の進捗と今後の取り組み</li>
+              <li>障害のある児童の就学・居場所づくり・交流の場</li>
+              <li>適応指導教室・不登校の現状と今後の取り組み</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2023年9月</div>
+            <ul class="activity-list-items">
+              <li>少子化対策の要因と取り組み・関係人口の取り組み</li>
+              <li>有機農業の積極的推進・ビレッジ宣言・学校給食導入</li>
+              <li>除草剤散布・市公園への散布状況と使用量削減</li>
+            </ul>
+          </div>
+
+          <div class="activity-list-group">
+            <div class="activity-list-term">2023年6月</div>
+            <ul class="activity-list-items">
+              <li>PPP/PFI連携・官民連携の取り組みと地元企業参入</li>
+              <li>移住支援の現状・周知方法・今後の取り組み</li>
+              <li>子育て支援・すこやか祝い金・持続可能対策</li>
+            </ul>
+          </div>
+
+        </div>
+      </details>
+
     </div>
   </section>
 
@@ -301,62 +554,6 @@
   </section>
 
 
-  <!-- ========================================
-       プロフィールセクション
-       ======================================== -->
-  <section id="profile" class="section section-alt">
-    <div class="container">
-      <h2 class="section-title fade-up">&#x1F338; プロフィール</h2>
-      <div class="profile-layout">
-
-        <!-- プロフィール写真 -->
-        <div class="profile-photo-wrap fade-up">
-          <img src="images/profile.jpg" alt="永塚英恵" class="profile-img" width="280" height="280" loading="lazy">
-        </div>
-
-        <!-- プロフィール情報（変更できます） -->
-        <div class="profile-bio fade-up">
-          <h3 class="profile-name">
-            永塚 英恵
-            <span class="profile-kana">ながつか はなえ</span>
-          </h3>
-          <p class="profile-post">結城市市議会議員</p>
-
-          <table class="profile-table">
-            <tr>
-              <th>生年月日</th>
-              <td>1966年5月16日（おうし座）</td>
-            </tr>
-            <tr>
-              <th>資格・肩書き</th>
-              <td>
-                ハラスメントカウンセラー＆アドバイザー<br>
-                英会話塾 English Rainbow 経営
-              </td>
-            </tr>
-            <tr>
-              <th>趣味</th>
-              <td>
-                <!-- 趣味タグ（追加・削除できます） -->
-                <span class="tag">英会話</span>
-                <span class="tag">三味線</span>
-                <span class="tag">モトクロス</span>
-                <span class="tag">バイクツーリング</span>
-                <span class="tag">食事</span>
-                <span class="tag">DIY</span>
-                <span class="tag">動物飼育</span>
-              </td>
-            </tr>
-            <tr>
-              <th>連絡先</th>
-              <td><a href="mailto:hakkuna@mineo.jp">hakkuna@mineo.jp</a></td>
-            </tr>
-          </table>
-        </div>
-
-      </div>
-    </div>
-  </section>
 
 
   <!-- ========================================
@@ -420,19 +617,19 @@
           <div class="gallery-caption">有機農業実践講習会</div>
         </a>
 
-        <a href="https://www.instagram.com/agrirainbow87/?hl=ja" target="_blank" rel="noopener" class="gallery-item fade-up">
-          <img src="images/gallery/photo2.jpg" alt="有機白菜の中での講習" loading="lazy">
-          <div class="gallery-caption">有機白菜の中での講習</div>
+        <a href="https://www.instagram.com/akari_greenproject" target="_blank" rel="noopener" class="gallery-item fade-up">
+          <img src="images/gallery/photo2.jpg" alt="アカリグリーンプロジェクト" loading="lazy">
+          <div class="gallery-caption">アカリグリーンプロジェクト</div>
         </a>
 
-        <a href="https://www.tiktok.com/@hakkyna?_t=8YKvqJxHCEb&_r=1" target="_blank" rel="noopener" class="gallery-item fade-up">
-          <img src="images/gallery/photo3.jpg" alt="議員活動" loading="lazy">
-          <div class="gallery-caption">議員活動</div>
+        <a href="https://www.instagram.com/hakkyna/" target="_blank" rel="noopener" class="gallery-item fade-up">
+          <img src="images/gallery/photo3.jpg" alt="地域のイベント" loading="lazy">
+          <div class="gallery-caption">地域のイベント</div>
         </a>
 
         <a href="https://www.instagram.com/hanaenagatsuka/" target="_blank" rel="noopener" class="gallery-item fade-up">
-          <img src="images/gallery/photo4.jpg" alt="女性議員と市民の交流" loading="lazy">
-          <div class="gallery-caption">女性議員と市民の交流</div>
+          <img src="images/gallery/photo4.jpg" alt="議員活動" loading="lazy">
+          <div class="gallery-caption">議員活動</div>
         </a>
 
         <a href="https://www.instagram.com/yukisatoyamanokai/?hl=ja" target="_blank" rel="noopener" class="gallery-item fade-up">
@@ -440,9 +637,9 @@
           <div class="gallery-caption">里山活動でお芋を焼く</div>
         </a>
 
-        <a href="https://www.instagram.com/yuki_city_official/?hl=ja" target="_blank" rel="noopener" class="gallery-item fade-up">
-          <img src="images/gallery/photo6.jpg" alt="健康の森音楽祭" loading="lazy">
-          <div class="gallery-caption">健康の森音楽祭</div>
+        <a href="https://www.tiktok.com/@hakkyna?_t=8YKvqJxHCEb&_r=1" target="_blank" rel="noopener" class="gallery-item fade-up">
+          <img src="images/gallery/photo6.jpg" alt="結城市の魅力" loading="lazy">
+          <div class="gallery-caption">結城市の魅力</div>
         </a>
         <!-- ▲ ここまでコピー ▲ -->
 

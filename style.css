@@ -126,13 +126,13 @@ a:hover { opacity: .72; }
    ============================================================ */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 80px 1.4rem 5rem;
+  padding: 80px 1.4rem 3rem;
 
   /* 背景写真（images/hero-bg.jpg） */
   background-image: url('images/hero-bg-new.jpg');
@@ -153,8 +153,49 @@ a:hover { opacity: .72; }
 
 .hero-content { position: relative; z-index: 1; }
 
+.hero-split {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  max-width: var(--max);
+  width: 100%;
+  padding: 0 1.4rem;
+  align-items: center;
+}
+
+.hero-left { text-align: left; }
+.hero-left .hero-avatar { margin: 0 0 .8rem 0; }
+.hero-left .hero-sns { justify-content: flex-start; }
+
+.hero-right {
+  background: rgba(0,0,0,.28);
+  border-radius: var(--r);
+  padding: 1.4rem 1.6rem;
+  backdrop-filter: blur(8px);
+}
+
+.hero-prof-table { width: 100%; border-collapse: collapse; font-size: .88rem; }
+.hero-prof-table th {
+  color: rgba(255,255,255,.7);
+  font-weight: normal;
+  padding: .55rem .8rem .55rem 0;
+  white-space: nowrap;
+  vertical-align: top;
+  font-size: .82rem;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+  width: 80px;
+}
+.hero-prof-table td {
+  color: rgba(255,255,255,.92);
+  padding: .55rem 0;
+  line-height: 1.6;
+  border-bottom: 1px solid rgba(255,255,255,.15);
+}
+.hero-prof-table tr:last-child th,
+.hero-prof-table tr:last-child td { border-bottom: none; }
+
 .hero-avatar {
-  width: 150px; height: 150px;
+  width: 100px; height: 100px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid rgba(255,255,255,.88);
@@ -1249,6 +1290,355 @@ details[open] .faq-q::after { transform: rotate(45deg); }
 
 
 /* ============================================================
+   実績・成果セクション
+   ============================================================ */
+.results-section {
+  background: linear-gradient(135deg, var(--pink-light) 0%, #fff 100%);
+}
+
+.results-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+  margin-top: 2rem;
+}
+
+.result-card {
+  background: #fff;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+  box-shadow: 0 2px 12px var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+}
+
+.result-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+}
+
+.result-icon {
+  font-size: 2rem;
+  margin-bottom: .6rem;
+}
+
+.result-card h3 {
+  font-size: .95rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: .5rem;
+  line-height: 1.5;
+}
+
+.result-card p {
+  font-size: .82rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+}
+
+
+/* ============================================================
+   H1ヒーロー役職ラベル
+   ============================================================ */
+.hero-name-role {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: .08em;
+  color: rgba(255,255,255,.88);
+  margin-top: .2rem;
+}
+
+
+/* ============================================================
+   議会活動報告
+   ============================================================ */
+.activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.4rem;
+  margin-top: 2rem;
+}
+
+.activity-card {
+  background: #fff;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  padding: 1.4rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: .8rem;
+}
+
+.activity-date {
+  font-size: .85rem;
+  color: var(--text-light);
+}
+
+.activity-tag {
+  font-size: .75rem;
+  background: var(--pink-light);
+  color: var(--pink-dark);
+  padding: .15rem .65rem;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.activity-title {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: .6rem;
+  line-height: 1.5;
+}
+
+.activity-body {
+  font-size: .88rem;
+  color: var(--text-mid);
+  line-height: 1.85;
+}
+
+.activity-note {
+  text-align: center;
+  font-size: .85rem;
+  color: var(--text-light);
+  margin-top: 1.5rem;
+}
+
+.activity-all {
+  margin-top: 2.5rem;
+  background: #fff;
+  border-radius: var(--r);
+  border: 1px solid var(--border);
+  padding: 1.8rem;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.activity-all summary {
+  cursor: pointer;
+  list-style: none;
+}
+.activity-all summary::-webkit-details-marker { display: none; }
+
+.activity-all-title {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--pink);
+  padding: .8rem 1.4rem;
+  border: 2px solid var(--pink);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+  margin-bottom: 0;
+}
+
+.activity-all[open] .activity-all-title {
+  background: var(--pink);
+  color: #fff;
+}
+
+.activity-all-title::after {
+  content: '▼';
+  font-size: .75rem;
+  transition: transform .25s;
+}
+
+.activity-all[open] .activity-all-title::after {
+  transform: rotate(180deg);
+}
+
+.activity-all .activity-list {
+  margin-top: 1.4rem;
+}
+
+.activity-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.activity-list-group { }
+
+.activity-list-term {
+  font-size: .82rem;
+  font-weight: bold;
+  color: var(--pink);
+  border-bottom: 1px solid var(--border);
+  padding-bottom: .3rem;
+  margin-bottom: .5rem;
+}
+
+.activity-list-items {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+.activity-list-items li {
+  font-size: .8rem;
+  color: var(--text-mid);
+  padding-left: .8rem;
+  position: relative;
+  line-height: 1.6;
+}
+
+.activity-list-items li::before {
+  content: '›';
+  position: absolute;
+  left: 0;
+  color: var(--pink);
+}
+
+
+/* ============================================================
+   プロフィール v2（写真小さく・SNS大きく）
+   ============================================================ */
+.profile-layout-v2 {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.profile-compact {
+  text-align: center;
+}
+
+.profile-img-sm {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 6px 24px var(--shadow);
+  outline: 3px solid var(--pink-light);
+  margin-bottom: .8rem;
+}
+
+.profile-compact .profile-name {
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.profile-compact .profile-post {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.sns-area-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.sns-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .85rem;
+}
+
+.sns-card-yt {
+  grid-column: 1 / -1;
+}
+
+.sns-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--r);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  background: #fff;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: transform .2s, box-shadow .2s;
+  color: var(--text);
+}
+
+.sns-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px var(--shadow);
+  opacity: 1;
+}
+
+.sns-card-thumb {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.sns-card-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sns-card-play {
+  position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 52px; height: 52px;
+  background: rgba(255,255,255,.9);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.3rem;
+  color: #ff0000;
+  box-shadow: 0 4px 16px rgba(0,0,0,.3);
+}
+
+.sns-card-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 72px;
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+.sns-bg-x  { background: #000; }
+.sns-bg-ig { background: linear-gradient(135deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+.sns-bg-tt { background: #010101; }
+.sns-bg-fb { background: #1877f2; }
+
+.sns-card-body {
+  padding: .8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
+
+.sns-platform-label {
+  font-weight: bold;
+  font-size: .9rem;
+  color: var(--text);
+}
+
+.sns-yt-label { color: #ff0000; }
+
+.sns-card-desc {
+  font-size: .8rem;
+  color: var(--text-mid);
+  line-height: 1.5;
+}
+
+.sns-handle {
+  font-size: .78rem;
+  color: var(--text-light);
+}
+
+
+/* ============================================================
    スマートフォン対応
    ============================================================ */
 @media (max-width: 720px) {
@@ -1282,9 +1672,28 @@ details[open] .faq-q::after { transform: rotate(45deg); }
   .hero-name { font-size: 2.3rem; }
   .hero-catch { font-size: 1.05rem; }
 
+  /* ヒーロー */
+  .hero-split { grid-template-columns: 1fr; text-align: center; }
+  .hero-left { text-align: center; }
+  .hero-left .hero-avatar { margin: 0 auto .8rem; }
+  .hero-left .hero-sns { justify-content: center; }
+
   /* プロフィール */
   .profile-layout { grid-template-columns: 1fr; }
   .profile-photo-wrap { max-width: 200px; margin: 0 auto; }
+  .profile-layout-v2 { grid-template-columns: 1fr; }
+  .profile-compact { text-align: center; }
+  .profile-compact .profile-name { text-align: center; }
+  .profile-compact .profile-post { text-align: center; }
+  .sns-cards { grid-template-columns: 1fr; }
+  .sns-card-yt { grid-column: auto; }
+
+  /* 実績 */
+  .results-grid { grid-template-columns: repeat(2, 1fr); }
+
+  /* 議会活動 */
+  .activity-grid { grid-template-columns: 1fr; }
+  .activity-list { grid-template-columns: 1fr; }
 
   /* 連絡 */
   .contact-layout { grid-template-columns: 1fr; }
