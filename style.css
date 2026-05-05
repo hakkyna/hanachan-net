@@ -802,7 +802,7 @@ a:hover { opacity: .72; }
    ============================================================ */
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: .75rem;
 }
 
@@ -1666,6 +1666,9 @@ details[open] .faq-q::after { transform: rotate(45deg); }
     border-radius: 0;
     border-bottom: 1px solid var(--border);
   }
+
+  /* ギャラリー */
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); }
 
   /* ヒーロー */
   .hero { background-attachment: scroll; } /* モバイルはパーラックス無効 */
