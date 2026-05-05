@@ -1191,6 +1191,64 @@ a:hover { opacity: .72; }
 
 
 /* ============================================================
+   よくある質問
+   ============================================================ */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: .8rem;
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.faq-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  list-style: none;
+  color: var(--text);
+}
+
+.faq-q::-webkit-details-marker { display: none; }
+
+.faq-q::after {
+  content: '＋';
+  flex-shrink: 0;
+  color: var(--pink);
+  font-size: 1.2rem;
+  transition: transform .25s;
+}
+
+details[open] .faq-q::after { transform: rotate(45deg); }
+
+.faq-a {
+  padding: 0 1.4rem 1.2rem;
+  color: var(--text-mid);
+  line-height: 1.9;
+}
+
+.faq-list-inner {
+  margin: .6rem 0 0 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+}
+
+
+/* ============================================================
    スマートフォン対応
    ============================================================ */
 @media (max-width: 720px) {
